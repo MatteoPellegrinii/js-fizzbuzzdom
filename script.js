@@ -9,9 +9,9 @@ for (let index = 1; index <= 100; index++) {
     let restodidieci = index % 10;
     console.log(restodidieci);
     
-    if (resto = 0){
-        let element = `fizzbuz`;
-        ul.innerHTML += element; 
+    if (restodicinque = 0){
+        let element = `<li class="box box--${index}">"fizzbuz" </li>`;
+        ul.innerHTML += element;
     }
 }
 
