@@ -1,0 +1,39 @@
+body{
+    background-color: darkblue;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    border: solid black 1px;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.box{
+    background-color: red;
+}
+.cinque{
+    background-color: orange;
+}
+.fizz{
+    background-color: aquamarine;
+}
+.others{
+    background-color: blue;
+}
+h1{
+    color: white;
+    font-size: 80px;
+}
