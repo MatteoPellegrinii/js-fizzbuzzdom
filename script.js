@@ -2,16 +2,22 @@ const ul = document.querySelector("ul.list");
 const li = document.createElement ("li");
 
 for (let index = 1; index <= 100; index++) {
-    let element = `<li class="box box--${index}">${index}</li>`;
-    ul.innerHTML += element; 
-    let restodicinque = index % 5;
+    let restodicinque = index % 3;
     console.log(restodicinque);
-    let restodidieci = index % 10;
+    let restodidieci = index % 5;
     console.log(restodidieci);
     
-    if (restodicinque = 0){
-        let element = `<li class="box box--${index}">"fizzbuz" </li>`;
+    if (restodicinque === 0){
+        let element = `<li class="box box--${index}"> fizz </li>`;
         ul.innerHTML += element;
+    }
+    else if (restodidieci=== 0) {
+        let element = `<li class="box box--${index}"> buzz </li>`;
+        ul.innerHTML += element;
+    }
+    else{
+        let element = `<li class="box box--${index}">${index}</li>`;
+        ul.innerHTML += element; 
     }
 }
 
