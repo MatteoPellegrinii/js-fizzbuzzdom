@@ -15,6 +15,10 @@ for (let index = 1; index <= 100; index++) {
         let element = `<li class="box box--${index}"> buzz </li>`;
         ul.innerHTML += element;
     }
+    else if((restodicinque === 0) || (restodidieci=== 0)) {
+        let element = `<li class="box box--${index}"> fizzbuzz </li>`;
+        ul.innerHTML += element;
+    }
     else{
         let element = `<li class="box box--${index}">${index}</li>`;
         ul.innerHTML += element; 
