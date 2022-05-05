@@ -2,21 +2,21 @@ const ul = document.querySelector("ul.list");
 const li = document.createElement ("li");
 
 for (let index = 1; index <= 100; index++) {
-    let reestotre = index % 3;
-    console.log(reestotre);
+    let restotre = index % 3;
+    console.log(restotre);
     let restocinque = index % 5;
     console.log(restocinque);
     
-    if( reestotre==0 && restocinque==0) {
-        let element = `<li class="box box--${index}"> fizzbuzz </li>`;
+    if( restotre==0 && restocinque==0) {
+        let element = `<li class="box"> fizzbuzz </li>`;
         ul.innerHTML += element;
     }
     else if (restocinque=== 0) {
-        let element = `<li class="cinque cinque--${index}"> buzz </li>`;
+        let element = `<li class="cinque "> buzz </li>`;
         ul.innerHTML += element;
     }
-    else if (reestotre === 0){
-        let element = `<li class="fizz fizz--${index}"> fizz </li>`;
+    else if (restotre === 0){
+        let element = `<li class="fizz"> fizz </li>`;
         ul.innerHTML += element;
     }
     else{
